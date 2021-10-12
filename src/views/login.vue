@@ -48,7 +48,7 @@ export default {
             max:10,
             message: "长度在6 到 10 个字符",
             trigger: "blur",
-          },],
+          }],
       },
     };
   },
@@ -56,7 +56,6 @@ export default {
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          // alert("submit!");
           this.$router.push({path:'/home'})
         } else {
           console.log("error submit!!");
